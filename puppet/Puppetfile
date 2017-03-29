@@ -1,0 +1,7 @@
+mod 'vrenetic/cm',
+  :git => 'git@github.com:vrenetic/puppet-packages.git',
+  :path => 'modules/cm'
+
+mod 'vrenetic/janus',
+  :git => 'git@github.com:vrenetic/puppet-packages.git',
+  :path => 'modules/janus'

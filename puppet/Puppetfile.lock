@@ -1,0 +1,513 @@
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-stdlib.git
+  ref: master
+  sha: d4a0ee48913aa20b4121bba7a0842021eabd69b9
+  specs:
+    puppetlabs-stdlib (4.16.0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/apt
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-apt (0.0.1)
+      vrenetic-ucf (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/autoprefixer
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-autoprefixer (0.0.1)
+      vrenetic-nodejs (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/bipbip
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-bipbip (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-build (>= 0)
+      vrenetic-cgi_fcgi (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-ruby (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/browserify
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-browserify (0.0.1)
+      vrenetic-nodejs (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/build
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-build (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/cgi_fcgi
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-cgi_fcgi (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/cm
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-cm (0.0.1)
+      puppetlabs-stdlib (>= 0)
+      vrenetic-autoprefixer (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-browserify (>= 0)
+      vrenetic-cm_janus (>= 0)
+      vrenetic-composer (>= 0)
+      vrenetic-elasticsearch (>= 0)
+      vrenetic-foreman (>= 0)
+      vrenetic-foreman_systemd (>= 0)
+      vrenetic-gearman (>= 0)
+      vrenetic-janus (>= 0)
+      vrenetic-memcached (>= 0)
+      vrenetic-mongodb (>= 0)
+      vrenetic-mysql (>= 0)
+      vrenetic-nginx (>= 0)
+      vrenetic-phantomjs (>= 0)
+      vrenetic-php5 (>= 0)
+      vrenetic-phpunit (>= 0)
+      vrenetic-redis (>= 0)
+      vrenetic-socket_redis (>= 0)
+      vrenetic-systemd (>= 0)
+      vrenetic-ufw (>= 0)
+      vrenetic-uglify (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/cm_janus
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-cm_janus (0.0.1)
+      vrenetic-bipbip (>= 0)
+      vrenetic-fluentd (>= 0)
+      vrenetic-lame (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-mjr_convert (>= 0)
+      vrenetic-nginx (>= 0)
+      vrenetic-nodejs (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/composer
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-composer (0.0.1)
+      vrenetic-php5 (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/daemon
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-daemon (0.0.1)
+      puppetlabs-stdlib (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-sudo (>= 0)
+      vrenetic-systemd (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/database
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-database (0.0.1)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/elasticsearch
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-elasticsearch (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-helper (>= 0)
+      vrenetic-java (>= 0)
+      vrenetic-monit (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/ffmpeg
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-ffmpeg (0.0.3)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/fluentd
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-fluentd (0.0.1)
+      vrenetic-daemon (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-ruby (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/foreman
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-foreman (0.0.1)
+      vrenetic-ruby (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/foreman_systemd
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-foreman_systemd (0.0.1)
+      vrenetic-foreman (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/gearman
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-gearman (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-monit (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/git
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-git (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/helper
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-helper (0.0.1)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/janus
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-janus (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-build (>= 0)
+      vrenetic-daemon (>= 0)
+      vrenetic-fluentd (>= 0)
+      vrenetic-git (>= 0)
+      vrenetic-helper (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-needrestart (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/java
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-java (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/lame
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-lame (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/logrotate
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-logrotate (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/memcached
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-memcached (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-daemon (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/mjr_convert
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-mjr_convert (0.0.1)
+      vrenetic-ffmpeg (>= 0)
+      vrenetic-janus (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/mongodb
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-mongodb (0.0.1)
+      puppetlabs-stdlib (>= 0)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-daemon (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-ntp (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/monit
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-monit (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/mysql
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-mysql (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-daemon (>= 0)
+      vrenetic-database (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-sysctl (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/needrestart
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-needrestart (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/nginx
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-nginx (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-ufw (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/nodejs
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-nodejs (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/ntp
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-ntp (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-monit (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/openssl
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-openssl (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/phantomjs
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-phantomjs (0.0.1)
+      puppetlabs-stdlib (>= 0)
+      vrenetic-apt (>= 0)
+      vrenetic-nodejs (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/php5
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-php5 (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-build (>= 0)
+      vrenetic-gearman (>= 0)
+      vrenetic-git (>= 0)
+      vrenetic-helper (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-openssl (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/phpunit
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-phpunit (0.0.1)
+      vrenetic-php5 (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/redis
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-redis (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-sysctl (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/rsyslog
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-rsyslog (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-fluentd (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/ruby
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-ruby (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-build (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/socket_redis
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-socket_redis (0.0.1)
+      vrenetic-daemon (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-monit (>= 0)
+      vrenetic-nodejs (>= 0)
+      vrenetic-redis (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/sudo
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-sudo (0.0.1)
+      vrenetic-apt (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/sysctl
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-sysctl (0.0.1)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/systemd
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-systemd (0.0.1)
+      vrenetic-apt (>= 0)
+      vrenetic-bipbip (>= 0)
+      vrenetic-sysctl (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/ucf
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-ucf (0.0.1)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/ufw
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-ufw (0.0.1)
+      puppetlabs-stdlib (>= 0)
+      vrenetic-apt (>= 0)
+      vrenetic-logrotate (>= 0)
+      vrenetic-rsyslog (>= 0)
+
+GIT
+  remote: git@github.com:vrenetic/puppet-packages.git
+  path: modules/uglify
+  ref: master
+  sha: 733eb2e236befcd42a6e418c94d9bc49972ec119
+  specs:
+    vrenetic-uglify (0.0.1)
+      vrenetic-nodejs (>= 0)
+
+DEPENDENCIES
+  vrenetic-cm (>= 0)
+  vrenetic-janus (>= 0)
+

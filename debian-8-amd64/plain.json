@@ -1,0 +1,78 @@
+{
+  "builders": [
+    {
+      "name": "virtualbox",
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "<esc><wait>",
+        "install ",
+        "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+        "debian-installer=en_US ",
+        "auto ",
+        "locale=en_US ",
+        "kbd-chooser/method=de ",
+        "netcfg/get_hostname={{ .Name }} ",
+        "netcfg/get_domain=vagrantup.com ",
+        "fb=false ",
+        "debconf/frontend=noninteractive ",
+        "console-setup/ask_detect=false ",
+        "keyboard-configuration/xkb-keymap=en_US ",
+        "keyboard-configuration/layout=USA ",
+        "keyboard-configuration/variant=USA ",
+        "<enter>"
+      ],
+      "boot_wait": "3s",
+      "disk_size": 30000,
+      "guest_os_type": "Debian_64",
+      "http_directory": "http",
+      "iso_checksum": "749a15b7690769dd99e85d6104182a03d370b04b36106ec7cfaf6a551aa89fb4",
+      "iso_checksum_type": "sha256",
+      "iso_url": "http://cdimage.debian.org/debian-cd/8.7.1/amd64/iso-cd/debian-8.7.1-amd64-netinst.iso",
+      "shutdown_command": "sudo poweroff",
+      "ssh_password": "vagrant",
+      "ssh_port": 22,
+      "ssh_username": "vagrant",
+      "ssh_wait_timeout": "10000s",
+      "virtualbox_version_file": ".vbox_version",
+      "vboxmanage": [
+        ["modifyvm", "{{.Name}}", "--memory", "4096"],
+        ["modifyvm", "{{.Name}}", "--cpus", "1"]
+      ],
+      "vm_name": "debian-8-amd64-plain",
+      "headless": true
+    },
+    {
+      "name": "aws",
+      "type": "amazon-ebs",
+      "region": "eu-west-1",
+      "source_ami": "ami-402f1a33",
+      "instance_type": "m3.large",
+      "ssh_username": "admin",
+      "ami_name": "debian-8-amd64-plain {{timestamp}}",
+      "ami_description": "https://github.com/vrenetic/vagrant-boxes",
+      "ami_groups": ["all"],
+      "ami_regions": ["us-east-1"],
+      "ssh_timeout": "5m"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "output": "artifacts/{{.BuildName}}/debian-8-amd64-plain.box"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": [
+        "scripts/base.sh",
+        "scripts/grub.sh",
+        "scripts/virtualbox.sh",
+        "scripts/virtualbox-vagrant.sh",
+        "scripts/cleanup.sh",
+        "scripts/cleanup-virtualbox.sh"
+      ],
+      "execute_command": "{{.Vars}} sudo -E bash -e '{{.Path}}'"
+    }
+  ]
+}
