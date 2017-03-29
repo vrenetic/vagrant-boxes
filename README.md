@@ -7,11 +7,7 @@ Boxes are built and released on [Vagrant Cloud](https://vagrantcloud.com/vreneti
 **Debian 8 (jessie):**
 - `debian-8-amd64-plain`: Minimalistic
 - `debian-8-amd64-default`: With *git*, *rsync*, *ruby* and *puppet*
-
-**Debian 7 (wheezy):**
-- `debian-7-amd64-plain`: Minimalistic
-- `debian-7-amd64-default`: With *git*, *rsync*, *ruby* and *puppet*
-- `debian-7-amd64-cm`: With [CM framework](https://github.com/vrenetic/cm) dependencies.
+- `debian-8-amd64-cm`: With [CM framework](https://github.com/vrenetic/cm) dependencies.
 
 **Ubuntu 16.04 (Xenial Xerus):**
 - `ubuntu-1604-plain`: Minimalistic
@@ -28,7 +24,7 @@ Usage: Virtualbox
 Example `Vagrantfile`:
 ```ruby
 Vagrant.configure('2') do |config|
-  config.vm.box = 'vrenetic/debian-7-amd64-default'
+  config.vm.box = 'vrenetic/debian-8-amd64-default'
 end
 ```
 
@@ -42,7 +38,7 @@ Available regions: `eu-west-1`, `us-east-1`.
 Example `Vagrantfile` (using the [vagrant AWS provider plugin](https://github.com/mitchellh/vagrant-aws)):
 ```ruby
 Vagrant.configure('2') do |config|
-  config.vm.box = 'vrenetic/debian-7-amd64-default'
+  config.vm.box = 'vrenetic/debian-8-amd64-default'
 
   config.vm.provider :aws do |aws, override|
     override.ssh.username = 'admin' # For ubuntu use 'ubuntu'
